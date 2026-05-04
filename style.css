@@ -1,46 +1,103 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
+    background: #f4f6f9;
 }
 
+/* HEADER */
 header {
-    background: linear-gradient(to right, blue, purple);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 30px;
 }
 
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: center;
     gap: 20px;
     background: #333;
+    padding: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: #00f2fe;
+}
+
+/* SECTIONS */
 section {
     padding: 20px;
+    margin: 20px;
 }
 
-/* Flexbox */
-#projects {
-    display: flex;
-    flex-direction: column;
+/* PROJECT CARDS */
+article {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Animation */
+/* SKILLS */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #00f2fe;
+    color: black;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* FORM */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* BUTTON */
 button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
     transition: 0.3s;
 }
+
 button:hover {
-    transform: scale(1.1);
+    background: #00c6ff;
+    transform: scale(1.05);
 }
 
-/* Responsive */
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
+
+/* RESPONSIVE */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
