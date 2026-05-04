@@ -8,50 +8,72 @@
 
 <header>
     <h1>My Portfolio</h1>
+    <p>Full Stack Web Development Intern</p>
 </header>
 
 <nav>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
+<!-- ABOUT -->
 <section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Full Stack Web Development Intern with knowledge in HTML, CSS, JavaScript, PHP, and MySQL.
+        I enjoy creating responsive and user-friendly websites.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
     <article>
-        <h2>About Me</h2>
-        <p>I am a Full Stack Developer Intern.</p>
+        <h3>Portfolio Website</h3>
+        <p>Built using HTML, CSS, JavaScript</p>
+    </article>
+
+    <article>
+        <h3>Student Form System</h3>
+        <p>Created using PHP and MySQL</p>
+    </article>
+
+    <article>
+        <h3>Responsive Web Design</h3>
+        <p>Designed mobile-friendly layouts using CSS</p>
     </article>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Tech</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>Portfolio</td><td>HTML CSS JS</td></tr>
-        </tbody>
-        <tfoot>
-            <tr><td colspan="2">More coming soon</td></tr>
-        </tfoot>
-    </table>
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <form action="contact.php" method="POST">
-        <input type="text" name="name" placeholder="Name" required><br>
-        <input type="email" name="email" placeholder="Email" required><br>
-        <textarea name="message"></textarea><br>
+        <input type="text" name="name" placeholder="Name" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <textarea name="message" placeholder="Message"></textarea><br><br>
 
         Gender:
         <input type="radio" name="gender" value="male">Male
-        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="female">Female<br><br>
 
         Skills:
         <input type="checkbox" name="skills[]" value="HTML">HTML
-        <input type="checkbox" name="skills[]" value="CSS">CSS<br>
+        <input type="checkbox" name="skills[]" value="CSS">CSS<br><br>
 
         <button type="submit">Submit</button>
     </form>
@@ -62,5 +84,6 @@
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
